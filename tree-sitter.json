@@ -1,0 +1,40 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "vn_script",
+      "camelcase": "VNScript",
+      "title": "VN Script",
+      "scope": "source.vn",
+      "file-types": [
+        "script",
+        "vn"
+      ],
+      "injection-regex": "^vn_script$",
+      "class-name": "TreeSitterVnScript"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "VNScript for VNEngine",
+    "authors": [
+      {
+        "name": "Danial Haikal",
+        "email": "danialhaikalsanusi@gmail.com"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/mishoshup/vn-script.git"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
