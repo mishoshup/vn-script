@@ -24,9 +24,8 @@ module.exports = grammar({
     jump: ($) => seq("jump", field("target", $.identifier)),
     label: ($) => seq("label", field("name", $.identifier)),
     end: ($) => "end",
-    bg: ($) => seq("bg", field("file", $.string)),
+    bg: ($) => seq("bg", field("file", $.filename)),
 
-    // <-- only rule that changed -----------------
     char: ($) =>
       seq(
         "char",
